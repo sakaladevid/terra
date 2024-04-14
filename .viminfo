@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
-|2,0,1713102869,,"wq"
+|2,0,1713103220,,"wq"
 
 # Search String History (newest to oldest):
 
@@ -25,19 +25,47 @@
 # Registers:
 
 # File marks:
-'0  46  0  ~/file
-|4,48,46,0,1713102869,"~/file"
+'0  43  0  ~/file2.yml
+|4,48,43,0,1713103220,"~/file2.yml"
+'1  46  0  ~/file
+|4,49,46,0,1713103136,"~/file"
+'2  46  0  ~/file
+|4,50,46,0,1713102869,"~/file"
 
 # Jumplist (newest first):
+-'  43  0  ~/file2.yml
+|4,39,43,0,1713103220,"~/file2.yml"
+-'  1  0  ~/file2.yml
+|4,39,1,0,1713103153,"~/file2.yml"
+-'  46  0  ~/file
+|4,39,46,0,1713103136,"~/file"
+-'  46  0  ~/file
+|4,39,46,0,1713103136,"~/file"
 -'  46  0  ~/file
 |4,39,46,0,1713102869,"~/file"
+-'  46  0  ~/file
+|4,39,46,0,1713102869,"~/file"
+-'  1  0  ~/file
+|4,39,1,0,1713102801,"~/file"
+-'  1  0  ~/file
+|4,39,1,0,1713102801,"~/file"
+-'  1  0  ~/file
+|4,39,1,0,1713102801,"~/file"
 -'  1  0  ~/file
 |4,39,1,0,1713102801,"~/file"
 
 # History of marks within files (newest to oldest):
 
+> ~/file2.yml
+	*	1713103216	0
+	"	43	0
+	^	43	0
+	.	42	1
+	+	1	39
+	+	42	1
+
 > ~/file
-	*	1713102866	0
+	*	1713103133	0
 	"	46	0
 	^	46	0
 	.	45	1
