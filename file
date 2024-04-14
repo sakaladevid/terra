@@ -1,0 +1,46 @@
+
+
+
+resource "aws_instance" "myTerraform" {
+   count = 3
+  ami           = "ami-0b8b44ec9a8f90422"
+  instance_type = "t3.micro"
+
+  tags = {
+    Name = "Terraserver"
+  }
+} 
+
+resource "aws_vpc" "myvpc1" {
+  cidr_block = "10.0.0.0/24"
+
+ tags = {
+  name = "myterravpc"
+ }
+}
+
+resource "aws_internet_gateway" "myigw1" {
+  vpc_id = aws_vpc.myvpc1.id
+  
+  tags = {
+    name = "myterraigw"
+  }
+}
+
+resource "aws_subnet" "mysn1" {
+  vpc_id     = aws_vpc.myvpc1.id
+  cidr_block = "10.0.0.0/25"
+
+  tags = {
+    name = "mysn1terra"
+  }
+}
+
+resource "aws_subnet" "mysn2" {
+  vpc_id     = aws_vpc.myvpc1.id
+  cidr_block = "10.0.0.128/25"
+  tags = {
+    name = "mysn2terra"
+  }
+}
+
